@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="css/companies.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet">
+	<title>Companies list</title>
+</head>
+<body>
+	<section id='companies-list' class='companies-list'></section>
+	<div id='remove-confirmation-dest'></div>
+	<script src="/bower/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src='js/build/bundle.js'></script>
+</body>
+</html>
+
+<template id='company-item-template'>
+	<article class='company'>
+		<div class='name'></div>
+		<div class='description'></div>
+		<section class='contact-data'>
+			<div class='email'></div>
+			<div class='country'></div>
+			<div class='url'></div>
+		</section>
+	</article>
+</template>
+
+<template id='remove-confirmation-template'>
+	<div class="modal remove-confirmation">
+
+		<div class="modal-content">
+			<span class="close">×</span>
+			<p class='confirmation'></p>
+			<button class='remove-confirmation-button'>Yes</button>
+		</div>
+
+	</div>
+</template>
