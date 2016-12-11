@@ -1,7 +1,8 @@
 'use strict';
 
-var loadCompanies = require('./loadCompanies');
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { BeerListContainer } from './components/components.js';
 
-document.addEventListener('DOMContentLoaded', function () {
-	loadCompanies();
-});
+ReactDOM.render( < BeerListContainer / > ,
+	document.querySelector('#root'));
