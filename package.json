@@ -4,7 +4,7 @@
   "description": "display companies list that can be erased when clicked on them",
   "main": "app.js",
   "scripts": {
-    "test": "mocha -w test/helpers/browser.js test/*.spec.js",
+    "test": "mocha -w --recursive test/helpers/browser.js test/**/*.spec.js",
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",
     "start": "nodemon app.js",
     "build": "browserify static/js/src/index.js -o static/js/build/bundle.js",
