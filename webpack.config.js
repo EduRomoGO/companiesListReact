@@ -17,8 +17,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(buildDirectory),
-        filename: 'app.js',
-        publicPath: 'http://localhost:7700/dist',
+        filename: 'webpack.bundle.js',
+        publicPath: 'http://localhost:7700/static/js/build',
     },
     externals: {
         'cheerio': 'window',
